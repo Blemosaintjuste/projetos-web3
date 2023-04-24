@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>::: Sistema WEB :::</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> Faça seu pedido:</h1>
+        <form method="post" action="PedidoServ">
+            <label for="produto">Produto:</label>
+            <input type="text" name="produto" maxlength="30" id="produto" required><br><br>
+             
+            <label for="preco">Preço:</label>
+            <input type="number" name="preco" id="preco" step="0.01" min="0" required>
+            <br><br>
+            
+             <label for="qtd">Quantidade:</label>
+             <input type="number" name="qtd" id="qtd" min="0" max="1000" required>
+            <br><br>
+            <br><br>
+            <input type="submit" value="Registrar">
+            <input type="reset" value="Limpar">
+           
+        </form>
+    </body>
+</html>

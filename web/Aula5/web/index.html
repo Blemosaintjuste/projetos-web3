@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <h1>Do que você gosta?</h1>
+        <form action="ProcessaForm" method="get">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+            <br><br>
+                   
+            <span>Qual a sua faixa etária?</span>
+            <br>
+            <br>
+            
+            <input type="radio" id="idade_1" name="idade" value="10 a 18" checked>
+            <label for="idade_1"> 10 a 18 </label>
+            <input type="radio" id="idade_2" name="idade" value="19 a25" >
+            <label for="idade_2"> 19 a 25 </label>
+            <input type="radio" id="idade_3" name="idade" value="Acima de 26" >
+            <label for="idade_3"> Acima de 26 </label><br><br>
+            
+            
+            
+            <span>Que turnos do dia você tem ocupação?</span>
+            <br>
+            <input type="checkbox" id="turno_1" name="turno[]" value="Manhã">
+            <label for="tuno_1">Manhã</label>
+            
+            <input type="checkbox" id="turno_2" name="turno[]" value="Tarde">
+            <label for="tuno_2">Tarde</label>
+            
+            <input type="checkbox" id="turno_3" name="turno[]" value="Noite">
+            <label for="tuno_3">Noite</label>
+            
+            <input type="checkbox" id="turno_4" name="turno[]" value="Madruga">
+            <label for="tuno_4">Madruga</label>
+            
+            <br><br>
+            
+            <label for="descricacao">Fale sobre você:</label><br><br>
+            <textarea id="descricacao" name="descricao" cols="50" rows="5" placeholder="Sua descrição aqui..."></textarea>
+            <br> <hr>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="Limpar campos">
+        </form>
+    </body>
+</html>
